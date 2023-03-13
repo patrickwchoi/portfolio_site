@@ -1,7 +1,7 @@
 
 export default function MiddleContent() {
   return (
-    <div>
+    <div className="middleContent">
       <h1>Middle Content</h1>
     </div>
   )

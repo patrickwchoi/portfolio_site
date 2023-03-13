@@ -4,7 +4,6 @@ export default function HomeScreen() {
 
   return (
     <div>
-      <h1>Home Screen</h1>
       <Header />
       <MainContent />
     </div>

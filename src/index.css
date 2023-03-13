@@ -1,3 +1,7 @@
+:root{
+  --lightgrey: rgb(185, 185, 185);
+}
+
 @font-face {
   font-family: "windows95";
   font-style: normal;
