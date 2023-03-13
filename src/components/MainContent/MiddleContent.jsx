@@ -1,8 +1,68 @@
 
+import React, {useState} from "react";
+import Paper from "@material-ui/core/Paper";
+import Tab from "@material-ui/core/Tab";
+import AppBar from '@material-ui/core/AppBar';
+import Tabs from "@material-ui/core/Tabs";
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles({
+  root: {
+    boxShadow: 'none',
+    backgroundColor: 'transparent',
+    color: 'inherit',
+  },
+  tabs: {
+    '& .MuiTab-root': {
+      minWidth: 0,
+      marginRight: '20px',
+      fontSize: '16px',
+      textTransform: 'capitalize',
+      opacity: 0.6,
+      fontFamily: 'windows95', 
+      '&.Mui-selected': {
+        opacity: 1,
+        fontWeight: 'bold',
+        border: '1px solid #000',
+      }
+    }
+  }
+});
+
 export default function MiddleContent() {
+  const classes = useStyles();
+  const [value, setValue] = useState(0); //tab value
+  let content;
+  if (value === 0) {
+    content = <h1>ABOUT ME</h1>;
+    // content = <AboutMe />;
+  } else if (value === 1) {
+    // content = <Projects />;
+  } else {
+    // content = <Riley />;
+  }
+  
   return (
     <div className="middleContent">
-      <h1>Middle Content</h1>
+      <AppBar 
+        position='relative' className={classes.root}>
+        <Tabs
+          value={value} 
+          // textColor="black"
+          // indicatorColor="primary"
+          onChange={(event, newValue) => {
+            setValue(newValue);
+          }}
+          className={classes.tabs}
+        >
+          <Tab label="About Me" />
+          <Tab label="Projects" />
+          <Tab label="Riley" />
+        </Tabs>
+        <h3>TAB NO: {value} clicked!</h3>
+      </AppBar>
+
+      {content}
     </div>
   )
 }

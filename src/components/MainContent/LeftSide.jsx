@@ -7,7 +7,6 @@ export default function LeftSide() {
 
   return (
     <div className="leftSide">
-      <h1>Left Side</h1>
       <div className='profile'>
         <img id="profile_pic" src={stan_kyle} alt="profile_pic" />
         <div className="profile_info">
