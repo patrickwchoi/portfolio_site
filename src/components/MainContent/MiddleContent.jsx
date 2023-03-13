@@ -1,10 +1,13 @@
 
 import React, {useState} from "react";
-import Paper from "@material-ui/core/Paper";
 import Tab from "@material-ui/core/Tab";
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from "@material-ui/core/Tabs";
 import { makeStyles } from '@material-ui/core/styles';
+import AboutMe from './AboutMe';
+import Projects from './Projects';
+
+
 
 const useStyles = makeStyles({
   root: {
@@ -34,10 +37,9 @@ export default function MiddleContent() {
   const [value, setValue] = useState(0); //tab value
   let content;
   if (value === 0) {
-    content = <h1>ABOUT ME</h1>;
-    // content = <AboutMe />;
+    content = <AboutMe />;
   } else if (value === 1) {
-    // content = <Projects />;
+    content = <Projects />;
   } else {
     // content = <Riley />;
   }

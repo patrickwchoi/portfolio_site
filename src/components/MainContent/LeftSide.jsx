@@ -13,8 +13,8 @@ export default function LeftSide() {
           <h2>Patrick Choi</h2>
           <div className='profile_subheader'>
             <h4>He/They</h4>
-            <FontAwesomeIcon icon={faGithubAlt} />    
-            <FontAwesomeIcon icon={faLinkedin} />          
+            <FontAwesomeIcon className="icon" icon={faGithubAlt} onClick={() => window.open('https://github.com/patrickwchoi')} />    
+            <FontAwesomeIcon className="icon" icon={faLinkedin} onClick={() => window.open('https://linkedin.com/in/patrickwchoi')}/>          
           </div>
           <p>I am a software engineer blah blah blah blah blah</p>
           <h4>Skills</h4>

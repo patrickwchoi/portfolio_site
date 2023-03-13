@@ -49,3 +49,34 @@
   height: auto;
   margin-bottom:10px;
 }
+
+.aboutme, .projects{
+  display:flex;
+  flex-direction: column;
+  width:90%;
+}
+
+.aboutme-div{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.projects-item{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.project-text{
+  width:70%;
+}
+
+.icon{
+  height:20px;
+  margin-right:5px;
+}
+.icon:hover{
+  cursor: pointer;
+}
