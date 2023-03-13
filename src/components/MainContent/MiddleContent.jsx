@@ -61,7 +61,6 @@ export default function MiddleContent() {
           <Tab label="Projects" />
           <Tab label="Riley" />
         </Tabs>
-        <h3>TAB NO: {value} clicked!</h3>
       </AppBar>
 
       {content}

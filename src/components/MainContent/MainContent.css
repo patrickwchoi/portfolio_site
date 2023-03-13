@@ -67,10 +67,19 @@
 .projects-item{
   display:flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between; 
+  margin-bottom:10px;
+  gap:10px;
+  
 }
 .project-text{
   width:70%;
+  border: 2px solid black;
+  padding: 5px; 
+}
+.project-img{
+  height: 180px;
+  width: auto;
 }
 
 .icon{
