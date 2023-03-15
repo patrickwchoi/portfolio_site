@@ -56,13 +56,17 @@
   width:95%;
 }
 
-.aboutme-div{
+.aboutme-item{
   display:flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
+  width: 90%;
   margin-bottom: 10px;
+  background-color: var(--secondaryBG);
+  border: 2px solid black;
+  padding: 0px 10px;
 }
+
 
 .projects-item{
   display:flex;

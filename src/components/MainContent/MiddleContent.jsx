@@ -1,74 +1,66 @@
 
 import React, {useState} from "react";
-import Tab from "@material-ui/core/Tab";
-import AppBar from '@material-ui/core/AppBar';
-import Tabs from "@material-ui/core/Tabs";
-import { makeStyles } from '@material-ui/core/styles';
+// import Tab from "@material-ui/core/Tab";
+// import AppBar from '@material-ui/core/AppBar';
+// import Tabs from "@material-ui/core/Tabs";
+// import { makeStyles } from '@material-ui/core/styles';
 import AboutMe from './AboutMe';
 import Projects from './Projects';
+import Tab from '@mui/material/Tab';
+import Tabs from '@mui/material/Tabs';
+import TabPanel from '@mui/lab/TabPanel';
+import Box from '@mui/material/Box';
+import TabList from '@mui/lab/TabList';
+import  TabContext  from "@mui/lab/TabContext";
 
-
-
-const useStyles = makeStyles({
-  root: {
-    boxShadow: 'none',
-    backgroundColor: 'transparent',
-    color: 'inherit',
+// const useStyles = makeStyles({
+//   root: {
+//     boxShadow: 'none',
+//     backgroundColor: 'transparent',
+//     color: 'inherit',
     
-  },
-  tabs: {
-    '& .MuiTab-root': {
-      minWidth: 0,
-      marginRight: '20px',
-      fontSize: '16px',
-      textTransform: 'capitalize',
-      opacity: 0.6,
-      fontFamily: 'windows95', 
-      '&.Mui-selected': {
-        opacity: 1,
-        fontWeight: 'bold',
-        border: '1px solid #000',
-      },
+//   },
+//   tabs: {
+//     '& .MuiTab-root': {
+//       minWidth: 0,
+//       marginRight: '20px',
+//       fontSize: '16px',
+//       textTransform: 'capitalize',
+//       opacity: 0.6,
+//       fontFamily: 'windows95', 
+//       '&.Mui-selected': {
+//         opacity: 1,
+//         fontWeight: 'bold',
+//         border: '1px solid #000',
+//       },
       
-    }
-  }
-});
+//     }
+//   }
+// });
 
 export default function MiddleContent() {
-  const classes = useStyles();
-  const [value, setValue] = useState(0); //tab value
-  let content;
-  if (value === 0) {
-    content = <AboutMe />;
-  } else if (value === 1) {
-    content = <Projects />;
-  } else {
-    // content = <Riley />;
-  }
+  // const classes = useStyles();
+  const [value, setValue] = useState('1'); //tab value
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
   
   return (
     <div className="middleContent">
-      <AppBar 
-        position='relative' 
-        className={classes.root}
-        // className={chromeTabsStylesHook.useTabs()}
-        >
-        <Tabs
-          value={value} 
-          // textColor="black"
-          // indicatorColor="primary"
-          onChange={(event, newValue) => {
-            setValue(newValue);
-          }}
-          className={classes.tabs}
-        >
-          <Tab label="About Me" />
-          <Tab label="Projects" />
-          <Tab label="Riley" />
-        </Tabs>
-      </AppBar>
-
-      {content}
+      <Box sx={{ width: '100%', typography: 'body1' }}>
+      <TabContext value={value} >
+        <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+          <TabList onChange={handleChange} aria-label="lab API tabs example">
+            <Tab label="About Me" value="1" />
+            <Tab label="Projects" value="2" />
+            <Tab label="Riley" value="3" />
+          </TabList>
+        </Box>
+        <TabPanel value="1"><AboutMe/></TabPanel>
+        <TabPanel value="2"><Projects /></TabPanel>
+        <TabPanel value="3">Item Three</TabPanel>
+      </TabContext>
+    </Box>
     </div>
   )
 }
