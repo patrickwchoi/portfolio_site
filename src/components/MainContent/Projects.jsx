@@ -15,12 +15,12 @@ export default function Projects(){
         <img src={bagon} alt="penguin" className="project-img" />
       </div>
 
-      <div className="projects-item">
+      <div className="projects-item project-item-alternate">
+        <img src={tumble_ss} alt="penguin" className="project-img"/>
         <div className="project-text">
           <h2>Tumble</h2>
           <p>Tumble is a fullstack Tumblr clone built with a React/Redux frontend and Ruby on Rails backend. Features full CRUD functionality on posts and comments as well as partial CRUD for likes and user profiles. Utilized AWS S3 for the purpose of image storage, scalability and security</p>
         </div>
-        <img src={tumble_ss} alt="penguin" className="project-img"/>
       </div>
 
       <div className="projects-item">

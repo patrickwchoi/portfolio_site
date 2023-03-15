@@ -14,6 +14,7 @@ const useStyles = makeStyles({
     boxShadow: 'none',
     backgroundColor: 'transparent',
     color: 'inherit',
+    
   },
   tabs: {
     '& .MuiTab-root': {
@@ -27,7 +28,8 @@ const useStyles = makeStyles({
         opacity: 1,
         fontWeight: 'bold',
         border: '1px solid #000',
-      }
+      },
+      
     }
   }
 });
@@ -47,7 +49,10 @@ export default function MiddleContent() {
   return (
     <div className="middleContent">
       <AppBar 
-        position='relative' className={classes.root}>
+        position='relative' 
+        className={classes.root}
+        // className={chromeTabsStylesHook.useTabs()}
+        >
         <Tabs
           value={value} 
           // textColor="black"

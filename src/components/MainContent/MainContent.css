@@ -36,7 +36,7 @@
     width: 90%;
     padding:10px;
     margin-bottom: 10px;
-    background-color: var(--lightgrey);
+    background-color: var(--secondaryBG);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,7 +53,7 @@
 .aboutme, .projects{
   display:flex;
   flex-direction: column;
-  width:90%;
+  width:95%;
 }
 
 .aboutme-div{
@@ -70,12 +70,17 @@
   justify-content: space-between; 
   margin-bottom:10px;
   gap:10px;
-  
+  align-items: center;
 }
 .project-text{
   width:70%;
   border: 2px solid black;
-  padding: 5px; 
+  padding: 10px; 
+  padding-bottom: 5px;
+  background-color: var(--secondaryBG);
+}
+.project-text h2{
+  margin:0px;
 }
 .project-img{
   height: 180px;
@@ -88,4 +93,7 @@
 }
 .icon:hover{
   cursor: pointer;
+}
+.MuiTabs-indicator{
+  background-color: transparent !important;
 }

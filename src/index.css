@@ -1,5 +1,8 @@
 :root{
+  --primaryBG: grey;
+  --secondaryBG: rgb(185, 185, 185);
   --lightgrey: rgb(185, 185, 185);
+
 }
 
 @font-face {
@@ -13,6 +16,6 @@ body {
   margin: 0;
   font-family: windows95;
   font-weight: normal;
-  background-color: grey;
+  background-color: var(--primaryBG);
 }
 
