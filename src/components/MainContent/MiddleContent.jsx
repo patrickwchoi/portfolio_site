@@ -13,30 +13,24 @@ import Box from '@mui/material/Box';
 import TabList from '@mui/lab/TabList';
 import  TabContext  from "@mui/lab/TabContext";
 
-// const useStyles = makeStyles({
-//   root: {
-//     boxShadow: 'none',
-//     backgroundColor: 'transparent',
-//     color: 'inherit',
-    
-//   },
-//   tabs: {
-//     '& .MuiTab-root': {
-//       minWidth: 0,
-//       marginRight: '20px',
-//       fontSize: '16px',
-//       textTransform: 'capitalize',
-//       opacity: 0.6,
-//       fontFamily: 'windows95', 
-//       '&.Mui-selected': {
-//         opacity: 1,
-//         fontWeight: 'bold',
-//         border: '1px solid #000',
-//       },
-      
-//     }
-//   }
-// });
+const tabStyles = {
+  "& .MuiTab-root": {
+    minWidth: 0,
+    mr: "20px",
+    fontSize: "20px",
+    textTransform: "capitalize",
+    opacity: 1,
+    color: 'black', 
+    fontFamily: "windows95",
+    "&.Mui-selected": {
+      opacity: 1,
+      color: 'black',
+      fontWeight: "bold",
+      border: "1px solid #000",
+    },
+  },
+};
+
 
 export default function MiddleContent() {
   // const classes = useStyles();
@@ -50,7 +44,11 @@ export default function MiddleContent() {
       <Box sx={{ width: '100%', typography: 'body1' }}>
       <TabContext value={value} >
         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-          <TabList onChange={handleChange} aria-label="lab API tabs example">
+          <TabList 
+            onChange={handleChange} 
+            aria-label="lab API tabs example"
+            sx={tabStyles}
+          >
             <Tab label="About Me" value="1" />
             <Tab label="Projects" value="2" />
             <Tab label="Riley" value="3" />

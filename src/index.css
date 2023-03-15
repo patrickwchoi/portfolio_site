@@ -1,8 +1,11 @@
 :root{
   --primaryBG: grey;
   --secondaryBG: rgb(185, 185, 185);
-  --lightgrey: rgb(185, 185, 185);
 
+  --primaryBG-dark: #443953;
+  --secondaryBG-dark: #5633d2;
+  --primaryBG-normal: grey;
+  --secondaryBG-normal: rgb(185, 185, 185);
 }
 
 @font-face {
@@ -19,3 +22,6 @@ body {
   background-color: var(--primaryBG);
 }
 
+h1, h2, h3, h4 {
+  margin:0px;
+}
