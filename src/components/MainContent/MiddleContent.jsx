@@ -44,24 +44,26 @@ export default function MiddleContent() {
   return (
     <div className="middleContent">
     <img src={cats} alt="header" className="header_img" />
-      <Box sx={{ width: '100%', typography: 'body1' }}>
-      <TabContext value={value} >
-        <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-          <TabList 
-            onChange={handleChange} 
-            aria-label="lab API tabs example"
-            sx={tabStyles}
-          >
-            <Tab label="About Me" value="1" />
-            <Tab label="Projects" value="2" />
-            <Tab label="Riley" value="3" />
-          </TabList>
-        </Box>
-        <TabPanel value="1"><AboutMe/></TabPanel>
-        <TabPanel value="2"><Projects /></TabPanel>
-        <TabPanel value="3">Item Three</TabPanel>
-      </TabContext>
-    </Box>
+      <div className="middle-content-text">
+        <Box sx={{ width: '100%', typography: 'body1' }}>
+        <TabContext value={value} >
+          <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+            <TabList
+              onChange={handleChange}
+              aria-label="lab API tabs example"
+              sx={tabStyles}
+            >
+              <Tab label="About Me" value="1" />
+              <Tab label="Projects" value="2" />
+              {/* <Tab label="Riley" value="3" /> */}
+            </TabList>
+          </Box>
+          <TabPanel value="1"><AboutMe/></TabPanel>
+          <TabPanel value="2"><Projects /></TabPanel>
+          <TabPanel value="3">Item Three</TabPanel>
+        </TabContext>
+            </Box>
+      </div>
     </div>
   )
 }

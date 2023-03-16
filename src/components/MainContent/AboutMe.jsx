@@ -1,13 +1,27 @@
 import GithubStats from "./GithubStats"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithubAlt, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+
+const riley = require("../../assets/riley_baby.jpg")
 
 export default function AboutMe(){
 
   return (
     <div className="aboutme">
-      <h1>About Me</h1>
-      <div className="aboutme-item">
-        <p>Hello, welcome to my personal site! I am a front-end web developer</p>
-        <img src="" alt="penguin" />
+      <div className="aboutme-firstitem aboutme-item2">
+        <div className="aboutme-item-small">
+          <div className="aboutme-hello row">
+            <h3>Hello!</h3>
+            <div className="icons">
+              <FontAwesomeIcon className="icon" icon={faGithubAlt} onClick={() => window.open('https://github.com/patrickwchoi')} />
+              <FontAwesomeIcon className="icon" icon={faLinkedin} onClick={() => window.open('https://linkedin.com/in/patrickwchoi')}/>
+              <FontAwesomeIcon className="icon" icon={faEnvelope} onClick={() => window.open(`mailto:$ptrckchoi@gmail.com`, '_blank')} />
+            </div>
+          </div>
+          <p>Welcome to my personal site! I am software engineer living in the San Francisco Bay Area. </p>
+        </div>
+        <img src={riley} alt="penguin" className="aboutme-img1"/>
       </div>
       <div className="aboutme-item2">
         <div className="aboutme-item-small">
