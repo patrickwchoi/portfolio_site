@@ -64,10 +64,13 @@
 .profile_info{
   align-items: left;
   /* text-align: left; */
+  width: 100%;
 }
 .profile_subheader{
-  gap: 20px;
+  /* gap: 40px; */
+  justify-content: space-between;
   margin-top: 10px;
+  padding-right:10px;
 }
 .aboutme, .projects{
   display:flex;
@@ -103,11 +106,22 @@
   max-width: 60%;
 
 }
+.aboutme-img-container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  padding:5px;
+  padding-bottom:0px;
+  margin-left:15px;
+  background-color: var(--secondaryBG);
+}
 .aboutme-img1{
   height: 150px;
   width: auto;
-  margin-right: 10px;
-  border: 1.5px solid black;
+}
+.aboutme-img-container{
+  line-height: 0px;
 }
 .aboutme-firstitem{
   /* width: 80%; */
@@ -158,14 +172,16 @@
 .rightside-button button:hover{
   cursor: pointer;
 }
-.icon{
-  height:20px;
-  margin-right:5px;
-}
-.icon:hover{
-  cursor: pointer;
-}
+
 .MuiTabs-indicator{ 
   /* this gets rid of the default blue line under selected tab */
   background-color: transparent !important;
+}
+.resume-icon{
+  transition: 1.3s;
+  height: 120px;
+}
+.resume-icon:hover{
+  transform: translateY(-3px) rotateY(180deg);
+  color: var(--secondaryBG);
 }

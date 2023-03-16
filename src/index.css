@@ -32,3 +32,12 @@ h1, h2, h3, h4 {
 .pointer:hover{
   cursor: pointer;
 }
+.icon{
+  height:20px;
+  margin-right:7px;
+  transition-duration: .5s;
+}
+.icon:hover{
+  cursor: pointer;
+  transform: translateY(-3px);
+}
