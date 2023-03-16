@@ -1,5 +1,7 @@
+
 .mainContent{
     padding: 0 10px;
+    margin-top:20px;
     display:flex;
     flex-direction: row;
 }
@@ -22,6 +24,11 @@
     border: 2px solid black;
     border-radius: 1px;
     margin-right:10px;
+}
+.header_img{
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
 }
 .rightSide{
     width: 20%;
@@ -64,7 +71,7 @@
   display:flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 90%;
+  width: 95%;
   margin-bottom: 10px;
   background-color: var(--secondaryBG);
   border: 2px solid black;
@@ -122,4 +129,10 @@
 .MuiTabs-indicator{ 
   /* this gets rid of the default blue line under selected tab */
   background-color: transparent !important;
+}
+.react-github-calendar .calendar .graph-before-activity {
+  display: none;
+}
+.react-github-calendar .calendar .graph-canvas > svg > g:nth-child(n + 15) {
+  display: none;
 }

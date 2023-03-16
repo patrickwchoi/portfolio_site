@@ -13,6 +13,8 @@ import Box from '@mui/material/Box';
 import TabList from '@mui/lab/TabList';
 import  TabContext  from "@mui/lab/TabContext";
 
+const cats = require ("../../assets/cats_header.jpg");
+
 const tabStyles = {
   "& .MuiTab-root": {
     minWidth: 0,
@@ -41,6 +43,7 @@ export default function MiddleContent() {
   
   return (
     <div className="middleContent">
+    <img src={cats} alt="header" className="header_img" />
       <Box sx={{ width: '100%', typography: 'body1' }}>
       <TabContext value={value} >
         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
