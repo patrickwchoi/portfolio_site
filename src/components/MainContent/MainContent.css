@@ -130,9 +130,3 @@
   /* this gets rid of the default blue line under selected tab */
   background-color: transparent !important;
 }
-.react-github-calendar .calendar .graph-before-activity {
-  display: none;
-}
-.react-github-calendar .calendar .graph-canvas > svg > g:nth-child(n + 15) {
-  display: none;
-}
