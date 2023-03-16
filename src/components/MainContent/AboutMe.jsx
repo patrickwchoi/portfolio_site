@@ -9,12 +9,24 @@ export default function AboutMe(){
         <p>Hello, welcome to my personal site! I am a front-end web developer</p>
         <img src="" alt="penguin" />
       </div>
-      <div className="">
-        <div>
+      <div className="aboutme-item2">
+        <div className="aboutme-item-small">
           <h2>Frameworks</h2>
           <p>React.js, Redux, Ruby on Rails, MERN</p>
           <h2>Languages</h2>
           <p>JavaScript, HTML, CSS, Ruby, Python</p>
+        </div>
+        <div className="aboutme-item-small">
+          <h2>Likes</h2>
+          <p>Cats, </p>
+          <h2>Dislikes</h2>
+          <p>chocolate, </p>
+        </div>
+      </div>
+      <div className="aboutme-item2">
+        <div className="aboutme-item-small">
+          <h2>Contact Me!</h2>
+          
         </div>
       </div>
       <GithubStats />
