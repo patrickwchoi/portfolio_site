@@ -153,6 +153,10 @@
 .project-img{
   height: 180px;
   width: auto;
+  transition: .4s;
+}
+.project-img:hover{
+  transform: translateY(-5px);
 }
 
 .rightside-button{

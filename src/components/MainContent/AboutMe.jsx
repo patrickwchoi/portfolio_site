@@ -14,7 +14,7 @@ export default function AboutMe(){
       <div className="aboutme-firstitem aboutme-item2">
         <div className="aboutme-item-small">
           <div className="aboutme-hello row">
-            <h3>Hello!</h3>
+            <h2>Hello!</h2>
             <div className="icons">
               <FontAwesomeIcon className="icon" icon={faGithubAlt} onClick={() => window.open('https://github.com/patrickwchoi')} />
               <FontAwesomeIcon className="icon" icon={faLinkedin} onClick={() => window.open('https://linkedin.com/in/patrickwchoi')}/>
@@ -22,6 +22,7 @@ export default function AboutMe(){
             </div>
           </div>
           <p>Welcome to my personal site! I am a fullstack software engineer living in the San Francisco Bay Area. 
+            I'm looking forward to growing my skills as an engineer and contributing to projects I find enjoyable!
             In my free time, I enjoy reading manga, playing sports, and taking pictures of my cat.
           </p>
         </div>

@@ -32,6 +32,13 @@ h1, h2, h3, h4 {
 .pointer:hover{
   cursor: pointer;
 }
+.title_link{
+  text-decoration: underline;
+  transition : .4s;
+}
+.title_link:hover{
+  transform: translateY(-3px);
+}
 .icon{
   height:20px;
   margin-right:7px;
@@ -40,4 +47,11 @@ h1, h2, h3, h4 {
 .icon:hover{
   cursor: pointer;
   transform: translateY(-3px);
+}
+a{
+  color: inherit;
+}
+p{
+  font-size: 1.2rem;
+  font-weight: bold;
 }
