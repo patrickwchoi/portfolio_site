@@ -1,9 +1,5 @@
 
 import React, {useState} from "react";
-// import Tab from "@material-ui/core/Tab";
-// import AppBar from '@material-ui/core/AppBar';
-// import Tabs from "@material-ui/core/Tabs";
-// import { makeStyles } from '@material-ui/core/styles';
 import AboutMe from './AboutMe';
 import Projects from './Projects';
 import Tab from '@mui/material/Tab';
@@ -35,7 +31,6 @@ const tabStyles = {
 
 
 export default function MiddleContent() {
-  // const classes = useStyles();
   const [value, setValue] = useState('1'); //tab value
   const handleChange = (event, newValue) => {
     setValue(newValue);

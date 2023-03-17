@@ -31,16 +31,30 @@ export default function AboutMe(){
           <p>My cat Riley :3</p>
         </div>
       </div>
-      <div className="aboutme-item2">
-        <div className="aboutme-item-small">
+      <div className="aboutme-item2 skills-container">
+        <div className="aboutme-item-small aboutme-skills">
           <h2>Frameworks</h2>
-          <p>React.js, Redux, Ruby on Rails, MERN</p>
-          <h2>Languages</h2>
-          <p>JavaScript, HTML, CSS, Ruby, Python</p>
+          <ul>
+            <li>React.js/Redux</li>
+            <li>Ruby on Rails</li>
+            <li>MERN</li>
+          </ul>
         </div>
-        
-        <div>
-        <FontAwesomeIcon className="resume-icon icon" icon={faFileLines} onClick={() => window.open(`mailto:$ptrckchoi@gmail.com`, '_blank')} />
+        <div className="aboutme-item-small aboutme-skills">
+          <h2>Languages</h2>
+          <ul>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Ruby</li>
+            <li>Python</li>
+          </ul>
+        </div>
+        <div className="resume-big">
+          <a href="../../patrick_resume_2023.pdf" download>
+            <FontAwesomeIcon className="resume-icon icon" icon={faFileLines} onClick={() => window.open(`mailto:$ptrckchoi@gmail.com`, '_blank')} />
+          </a>
+          <h2>Download my Resume!</h2>
         </div>
       </div>
       <GithubStats />

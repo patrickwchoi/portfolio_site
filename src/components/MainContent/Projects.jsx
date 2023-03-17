@@ -27,7 +27,7 @@ export default function Projects(){
         <img src={tumble_ss} alt="penguin" className="project-img pointer" onClick={redirectToTumble}/>
         <div className="project-text">
           <h2 className="pointer title_link" onClick={redirectToTumble}>Tumble</h2>
-          <p>Tumble is a fullstack Tumblr clone built with a React/Redux frontend and Ruby on Rails backend. Features full CRUD functionality on posts and comments as well as partial CRUD for likes and user profiles. Utilized AWS S3 for the purpose of image storage, scalability and security</p>
+          <p>Tumble is a fullstack Tumblr clone built with a React/Redux frontend and Ruby on Rails backend. Features full CRUD functionality on posts and comments as well as partial CRUD for likes and user profiles. Utilized AWS S3 for the purpose of image storage, scalability and security.</p>
         </div>
       </div>
 

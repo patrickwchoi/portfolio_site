@@ -21,15 +21,14 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-    /* border-left: 2px solid black;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black; */
+
     margin-right:10px;
 }
 .header_img{
   width: 100%;
-  height: 120px;
+  height: 140px;
   object-fit: cover;
+  
 }
 .middle-content-text{
   border: 2px solid black;
@@ -122,16 +121,34 @@
 }
 .aboutme-img-container{
   line-height: 0px;
+  height: fit-content
 }
-.aboutme-firstitem{
-  /* width: 80%; */
-}
+
 .aboutme-hello{
   justify-content: space-between;
   padding-top: 5px;
   align-items: center;
 }
-
+.skills-container{
+  justify-content: space-around;
+}
+.aboutme-skills{
+  height: fit-content;
+  padding:10px;
+  width: 150px;
+  height: 180px;
+}
+.aboutme-skills ul{
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.resume-big{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 .projects-item{
   display:flex;
   flex-direction: row;
