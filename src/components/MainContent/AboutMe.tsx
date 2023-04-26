@@ -1,3 +1,4 @@
+import React from 'react';
 import GithubStats from "./GithubStats"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubAlt, faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -7,7 +8,14 @@ import Interests from "./Interests"
 
 const riley = require("../../assets/riley_baby.jpg")
 
-export default function AboutMe(){
+const AboutMe: React.FC = () => {
+  const openLink = (link: string) => {
+    window.open(link);
+  };
+
+  const openMail = (email: string) => {
+    window.open(`mailto:${email}`, '_blank');
+  };
 
   return (
     <div className="aboutme">
@@ -62,3 +70,4 @@ export default function AboutMe(){
     </div>
   )
 }
+export default AboutMe;

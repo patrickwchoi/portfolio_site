@@ -1,6 +1,6 @@
 
 import React, {useState} from "react";
-import AboutMe from './AboutMe';
+import AboutMe from './AboutMe.tsx';
 import Projects from './Projects';
 import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
