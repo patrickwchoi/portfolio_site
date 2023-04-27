@@ -1,3 +1,15 @@
+@media (max-width: 768px) {
+  .leftSide {
+    display: none !important;
+  }
+  
+  .middleContent{
+    width: 95% !important;
+  }
+  .rightSide {
+    display: none !important;
+  }
+}
 
 .mainContent{
     padding: 0 10px;
