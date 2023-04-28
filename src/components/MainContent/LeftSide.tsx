@@ -4,7 +4,7 @@ import { faEnvelope, faDownload } from '@fortawesome/free-solid-svg-icons'
 
 const stan_kyle = require('../../assets/stan_kyle.jpg');
 const me = require('../../assets/me.jpg');
-export default function LeftSide() {
+const LeftSide: React.FC = () => {
 
   return (
     <div className="leftSide">
@@ -27,8 +27,8 @@ export default function LeftSide() {
         </div>
       </div>
 
-
-
     </div>
   )
 }
+
+export default LeftSide;

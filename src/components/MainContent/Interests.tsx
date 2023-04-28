@@ -1,6 +1,7 @@
+import React from 'react';
 import './Interests.css'
 
-export default function Interests(){
+const Interests: React.FC = () => {
 
   return (
     <div className="interests">
@@ -57,3 +58,4 @@ export default function Interests(){
   )
 
 }
+export default Interests
