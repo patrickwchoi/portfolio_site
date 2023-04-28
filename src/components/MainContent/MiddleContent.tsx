@@ -1,9 +1,8 @@
 
 import React, {useState} from "react";
-import AboutMe from './AboutMe.tsx';
-import Projects from './Projects';
+import AboutMe from './AboutMe';
+import Projects from './Projects.jsx';
 import Tab from '@mui/material/Tab';
-import Tabs from '@mui/material/Tabs';
 import TabPanel from '@mui/lab/TabPanel';
 import Box from '@mui/material/Box';
 import TabList from '@mui/lab/TabList';
@@ -30,9 +29,9 @@ const tabStyles = {
 };
 
 
-export default function MiddleContent() {
+const MiddleContent: React.FC = () => {
   const [value, setValue] = useState('1'); //tab value
-  const handleChange = (event, newValue) => {
+  const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue);
   };
   
@@ -62,3 +61,4 @@ export default function MiddleContent() {
     </div>
   )
 }
+export default MiddleContent
