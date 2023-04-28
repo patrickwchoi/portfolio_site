@@ -1,7 +1,7 @@
 
 import React, {useState} from "react";
 import AboutMe from './AboutMe';
-import Projects from './Projects.jsx';
+import Projects from './Projects';
 import Tab from '@mui/material/Tab';
 import TabPanel from '@mui/lab/TabPanel';
 import Box from '@mui/material/Box';
