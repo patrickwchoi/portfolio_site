@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio_site/static/css/main.056e3240.css",
-    "main.js": "/portfolio_site/static/js/main.9f22fb66.js",
+    "main.css": "/portfolio_site/static/css/main.19441964.css",
+    "main.js": "/portfolio_site/static/js/main.ef9e0bd4.js",
     "static/media/tumble_screenshot.png": "/portfolio_site/static/media/tumble_screenshot.0c16fb725ec2ed664cf7.png",
     "static/media/me.jpg": "/portfolio_site/static/media/me.09e8e82dae0b813e7948.jpg",
     "static/media/riley_baby.jpg": "/portfolio_site/static/media/riley_baby.fd9d7b03bb7b1a324f65.jpg",
@@ -12,11 +12,11 @@
     "static/media/bagon.jpg": "/portfolio_site/static/media/bagon.690f0cd318bca529ceb1.jpg",
     "static/media/stars_header.jpg": "/portfolio_site/static/media/stars_header.cdb406abc7e50480df6e.jpg",
     "index.html": "/portfolio_site/index.html",
-    "main.056e3240.css.map": "/portfolio_site/static/css/main.056e3240.css.map",
-    "main.9f22fb66.js.map": "/portfolio_site/static/js/main.9f22fb66.js.map"
+    "main.19441964.css.map": "/portfolio_site/static/css/main.19441964.css.map",
+    "main.ef9e0bd4.js.map": "/portfolio_site/static/js/main.ef9e0bd4.js.map"
   },
   "entrypoints": [
-    "static/css/main.056e3240.css",
-    "static/js/main.9f22fb66.js"
+    "static/css/main.19441964.css",
+    "static/js/main.ef9e0bd4.js"
   ]
 }
