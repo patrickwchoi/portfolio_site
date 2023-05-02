@@ -16,14 +16,19 @@
 }
 
 @media (max-width: 767px) {
+  .mainContent{
+    /* display:flex;
+    flex-direction: column !important; */
+  }
   .leftSide{
-    display: none;
+    display: none !important;
   }
   .rightSide{
-    display: none;
+    display: none !important;
   }
   .middleContent{
     margin-left: 40px;
+    width: 100% !important;
   }
 }
 

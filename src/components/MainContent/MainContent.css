@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .leftSide {
     display: none !important;
   }
@@ -9,7 +9,7 @@
   .rightSide {
     display: none !important;
   }
-}
+} */
 
 .mainContent{
     padding: 0 10px;

@@ -29,7 +29,7 @@ const AboutMe: React.FC = () => {
               <FontAwesomeIcon className="icon" icon={faEnvelope} onClick={() => window.open(`mailto:$ptrckchoi@gmail.com`, '_blank')} />
             </div>
           </div>
-          <p>Welcome to my personal site! I am a fullstack software engineer living in the San Francisco Bay Area. 
+          <p>Welcome to my personal site! My name is Patrick Choi and I am a fullstack software engineer living in the San Francisco Bay Area. 
             I'm looking forward to growing my skills as an engineer and contributing to projects I find enjoyable!
             In my free time, I enjoy reading manga, playing sports, and taking pictures of my cat.
           </p>
