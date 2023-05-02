@@ -15,6 +15,18 @@
   src: url("/src/fonts/W95FA.otf");
 }
 
+@media (max-width: 767px) {
+  .leftSide{
+    display: none;
+  }
+  .rightSide{
+    display: none;
+  }
+  .middleContent{
+    margin-left: 40px;
+  }
+}
+
 body {
   margin: 0;
   font-family: windows95;
