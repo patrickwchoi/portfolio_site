@@ -23,9 +23,9 @@
   .leftSide{
     display: none !important;
   }
-  .rightSide{
+  /* .rightSide{
     display: none !important;
-  }
+  } */
   .middleContent{
     margin-left: 40px;
     width: 100% !important;
