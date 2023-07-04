@@ -18,10 +18,10 @@ const AboutMe: React.FC = () => {
   };
 
   return (
-    <div className="aboutme">
-      <div className="aboutme-firstitem aboutme-item2">
-        <div className="aboutme-item-small">
-          <div className="aboutme-hello row">
+    <div className="aboutme flex flex-col ">
+      <div className=" flex flex-row gap-x-2 justify-between">
+        <div className=" bg-secondaryBG border-2 max-w-xs px-2">
+          <div className="aboutme-hello row justify-between pt-1.5 items-center">
             <h2>Hello!</h2>
             <div className="icons">
               <FontAwesomeIcon className="icon" icon={faGithubAlt} onClick={() => window.open('https://github.com/patrickwchoi')} />
@@ -34,8 +34,8 @@ const AboutMe: React.FC = () => {
             In my free time, I enjoy reading manga, playing sports, and taking pictures of my cat.
           </p>
         </div>
-        <div className="aboutme-img-container">
-          <img src={riley} alt="penguin" className="aboutme-img1"/>
+        <div className="flex flex-col items-center border-2 bg-secondaryBG p-2 h-fit">
+          <img src={riley} alt="penguin" className="object-cover"/>
           <p>My cat Riley :3</p>
         </div>
       </div>
