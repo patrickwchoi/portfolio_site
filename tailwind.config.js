@@ -4,7 +4,13 @@ module.exports = {
   darkMode: false,
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primaryBG: 'grey',
+        secondaryBG: 'rgb(185, 185, 185)',
+        
+      }
+    },
   },
   plugins: [],
 }

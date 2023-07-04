@@ -7,14 +7,14 @@ const me = require('../../assets/me.jpg');
 const LeftSide: React.FC = () => {
 
   return (
-    <div className="leftSide">
-      <div className='profile'>
-        <img id="profile_pic" src={me} alt="profile_pic" />
+    <div className="leftSide w-1/3">
+      <div className='profile w-11/12 p-2 bg-secondaryBG border-2 border-black rounded-sm		'>
+        <img id="profile_pic" className='mb-1' src={me} alt="profile_pic" />
         <div className="profile_info">
           <h2>Patrick Choi</h2>
-          <div className='profile_subheader row'>
+          <div className='profile_subheader flex flex-row justify-between items-center'>
             <h4>He/They</h4>
-            <div className="row">
+            <div className="flex flex-row">
               <FontAwesomeIcon className="icon" icon={faGithubAlt} onClick={() => window.open('https://github.com/patrickwchoi')} />
               <FontAwesomeIcon className="icon" icon={faLinkedin} onClick={() => window.open('https://linkedin.com/in/patrickwchoi')}/>
               <FontAwesomeIcon className="icon" icon={faEnvelope} onClick={() => window.open(`mailto:$ptrckchoi@gmail.com`, '_blank')} />
@@ -22,11 +22,9 @@ const LeftSide: React.FC = () => {
                 <h4 className="icon">resume <FontAwesomeIcon icon={faDownload}/> </h4>
               </a>
             </div>      
-
           </div>
         </div>
       </div>
-
     </div>
   )
 }
