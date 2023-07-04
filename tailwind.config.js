@@ -9,7 +9,10 @@ module.exports = {
         primaryBG: 'grey',
         secondaryBG: 'rgb(185, 185, 185)',
         
-      }
+      },
+      borderColor: {
+        DEFAULT: 'black', 
+      },
     },
   },
   plugins: [],
