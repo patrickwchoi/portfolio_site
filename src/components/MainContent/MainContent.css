@@ -77,24 +77,24 @@
 
 
 .skills-container{
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 .aboutme-skills{
-  height: fit-content;
+  /* height: fit-content;
   padding:10px;
   width: 150px;
-  height: 180px;
+  height: 180px; */
 }
 .aboutme-skills ul{
-  padding-left: 20px;
-  margin-top: 10px;
+  /* padding-left: 20px;
+  margin-top: 10px; */
 }
 .resume-big{
-  display:flex;
+  /* display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  text-align: center; */
 }
 .projects-item{
   display:flex;

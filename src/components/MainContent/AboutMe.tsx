@@ -39,18 +39,18 @@ const AboutMe: React.FC = () => {
           <p>My cat Riley :3</p>
         </div>
       </div>
-      <div className="aboutme-item2 skills-container">
-        <div className="aboutme-item-small aboutme-skills">
+      <div className="aboutme-item2 skills-container flex flex-row justify-around py-4">
+        <div className="bg-secondaryBG border-2 p-2 h-fit">
           <h2>Frameworks</h2>
-          <ul>
+          <ul className="mt-1 pl-2">
             <li>React.js/Redux</li>
             <li>Ruby on Rails</li>
             <li>MERN</li>
           </ul>
         </div>
-        <div className="aboutme-item-small aboutme-skills">
+        <div className="bg-secondaryBG border-2 p-2 h-fit">
           <h2>Languages</h2>
-          <ul>
+          <ul className='mt-1 pl-2'>
             <li>JavaScript</li>
             <li>HTML</li>
             <li>CSS</li>
@@ -58,7 +58,7 @@ const AboutMe: React.FC = () => {
             <li>Python</li>
           </ul>
         </div>
-        <div className="resume-big">
+        <div className="resume-big flex flex-col items-center justify-center">
           <a href="../../patrick_resume_2023.pdf" download>
             <FontAwesomeIcon className="resume-icon icon" icon={faFileLines} onClick={() => window.open(`mailto:$ptrckchoi@gmail.com`, '_blank')} />
           </a>

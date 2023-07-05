@@ -13,6 +13,9 @@ module.exports = {
       borderColor: {
         DEFAULT: 'black', 
       },
+      borderWidth: {
+        DEFAULT: '2px',
+      },
     },
   },
   plugins: [],
