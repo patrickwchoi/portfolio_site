@@ -11,26 +11,15 @@
   }
 } */
 
-.mainContent{
-    padding: 0 10px;
-    margin-top:20px;
-    display:flex;
-    flex-direction: row;
-}
-.rightSide{
-    width: 15%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid black;
-    border-radius: 1px;
-}
-
-.aboutme, .projects{
-  /* display:flex;
-  flex-direction: column; */
+* {
   font-family: windows95;
 }
+
+h2{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
 .css-13xfq8m-MuiTabPanel-root{ 
   /* this is the default classname for my tab content */
   padding:10px !important;
@@ -120,15 +109,15 @@
   transition: .4s; */
 }
 .project-img:hover{
-  transform: translateY(-5px);
+  /* transform: translateY(-5px); */
 }
 
 .rightside-button{
-  display:flex;
+  /* display:flex;
   flex-direction: row;
   width: 90%;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 5px; */
 }
 .rightside-button img{
   height:30px;

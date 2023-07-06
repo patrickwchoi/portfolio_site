@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         primaryBG: 'grey',
         secondaryBG: 'rgb(185, 185, 185)',
+        secondaryBGHover: 'rgb(160, 160, 160)',
         
       },
       borderColor: {

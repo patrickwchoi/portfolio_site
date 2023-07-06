@@ -8,7 +8,7 @@ const LeftSide: React.FC = () => {
 
   return (
     <div className="leftSide w-1/3">
-      <div className='profile w-11/12 p-2 bg-secondaryBG border-2 border-black rounded-sm		'>
+      <div className='profile p-2 bg-secondaryBG border-2 border-black rounded-sm		'>
         {/* <img id="profile_pic" className='mb-1' src={me} alt="profile_pic" /> */}
         <img id="profile_pic" className='mb-1' src={stan_kyle} alt="profile_pic" />
 
