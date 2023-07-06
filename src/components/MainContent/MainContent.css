@@ -61,14 +61,14 @@
 
 }
 .aboutme-img-container{
-  display:flex;
+  /* display:flex;
   flex-direction: column;
   align-items: center;
   border: 1px solid black;
   padding:5px;
   padding-bottom:0px;
   margin-left:15px;
-  background-color: var(--secondaryBG);
+  background-color: var(--secondaryBG); */
 }
 .aboutme-img1{
   /* height: 150px;
@@ -97,27 +97,27 @@
   text-align: center; */
 }
 .projects-item{
-  display:flex;
+  /* display:flex;
   flex-direction: row;
   justify-content: space-between; 
   margin-bottom:10px;
   gap:10px;
-  align-items: center;
+  align-items: center; */
 }
 .project-text{
-  width:70%;
+  /* width:70%;
   border: 2px solid black;
   padding: 10px; 
   padding-bottom: 5px;
-  background-color: var(--secondaryBG);
+  background-color: var(--secondaryBG); */
 }
 .project-text h2{
-  margin:0px;
+  /* margin:0px; */
 }
 .project-img{
-  height: 180px;
+  /* height: 180px;
   width: auto;
-  transition: .4s;
+  transition: .4s; */
 }
 .project-img:hover{
   transform: translateY(-5px);

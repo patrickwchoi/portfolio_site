@@ -14,13 +14,18 @@ export default function Projects(){
     window.open('https://singed.onrender.com/', '_blank');
   }
   return (
-    <div className="projects">
-      <div className="projects-item">
-        <div className="project-text">
+    <div className="projects gap-5">
+      <div className="projects-item flex flex-row justify-between gap-3 items-center">
+        <div className="border bg-secondaryBG px-2 py-1">
           <h2 className="pointer title_link" onClick={redirectToBagon}>Bagon Adventures</h2>
-          <p>Bagon Adventures is a browser-based game made with vanilla Javascript and HTML Canvas. You play as a member of Team Rocket trying to evolve your Bagon by interacting with various wild pokemon. Features include WASD movement, collision detection, sprite animations, and gameplay progression. Inspired by Pokemon Mystery Dungeon and Animal Crossing.</p>
+          <p>
+            Bagon Adventures is a browser-based game made with vanilla Javascript and HTML Canvas. 
+            You play as a member of Team Rocket trying to evolve your Bagon by interacting with wild pokemon. 
+            Features include WASD movement, collision detection, sprite animations, and gameplay progression. 
+            Inspired by Pokemon Mystery Dungeon.
+          </p>
         </div>
-        <img src={bagon} alt="penguin" className="project-img pointer" onClick={redirectToBagon} />
+        <img src={bagon} alt="penguin" className="h-48 hover:-translate-y-1.5 duration-500 pointer" onClick={redirectToBagon} />
       </div>
 
       <div className="projects-item project-item-alternate">
