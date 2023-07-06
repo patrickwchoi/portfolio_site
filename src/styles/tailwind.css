@@ -3,10 +3,25 @@
 @import 'tailwindcss/utilities';
 
 @layer components {
+  * {
+    @apply font-windows95;
+  }
+  p {
+    @apply text-lg;
+  }
   .rightside-btn {
     @apply flex flex-row items-center gap-1 bg-secondaryBG border rounded-md px-1 hover:bg-secondaryBGHover;
   }
   .rightside-btn img {
     @apply w-auto h-8;
+  }
+  .pointer {
+    @apply cursor-pointer;
+  }
+  .title_link {
+    @apply underline transition hover:-translate-y-1 duration-300;
+  }
+  .icon {
+    @apply h-5 transition hover:-translate-y-1 duration-300 pointer;
   }
 }

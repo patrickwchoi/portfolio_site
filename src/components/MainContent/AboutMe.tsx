@@ -21,9 +21,9 @@ const AboutMe: React.FC = () => {
     <div className="aboutme flex flex-col ">
       <div className="flex flex-row gap-x-2 justify-between">
         <div className="aboutme-hello bg-secondaryBG border-2 max-w-xs px-2">
-          <div className="row justify-between pt-1.5 items-center">
+          <div className="flex flex-row justify-between pt-1.5 items-center">
             <h2>Hello!</h2>
-            <div className="icons">
+            <div className="flex flex-row gap-2 ">
               <FontAwesomeIcon className="icon" icon={faGithubAlt} onClick={() => window.open('https://github.com/patrickwchoi')} />
               <FontAwesomeIcon className="icon" icon={faLinkedin} onClick={() => window.open('https://linkedin.com/in/patrickwchoi')}/>
               <FontAwesomeIcon className="icon" icon={faEnvelope} onClick={() => window.open(`mailto:$ptrckchoi@gmail.com`, '_blank')} />
