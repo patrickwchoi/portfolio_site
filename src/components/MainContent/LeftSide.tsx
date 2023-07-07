@@ -16,8 +16,9 @@ const LeftSide: React.FC = () => {
         <div className="profile_info">
           <h2>Patrick Choi</h2>
           <div className='profile_subheader flex flex-row justify-between items-center'>
-            <h4>He/They</h4>
+            <h3>He/They</h3>
             <div className="flex flex-row gap-2 items-center">
+              <p className='text-sm'>ptrckchoi@gmail</p>
               <FontAwesomeIcon className="icon" icon={faGithubAlt} onClick={() => window.open('https://github.com/patrickwchoi')} />
               <FontAwesomeIcon className="icon" icon={faLinkedin} onClick={() => window.open('https://linkedin.com/in/patrickwchoi')}/>
               <FontAwesomeIcon className="icon" icon={faEnvelope} onClick={() => window.open(`mailto:$ptrckchoi@gmail.com`, '_blank')} />
