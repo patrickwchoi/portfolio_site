@@ -60,7 +60,7 @@ const AboutMe: React.FC = () => {
           </ul>
         </div>
         <div className="resume-big flex flex-col items-center justify-center">
-          <a href="../../patrick_resume_2023.pdf" download>
+          <a href="../../assets/patrick_resume_2023.pdf" download>
             <FontAwesomeIcon className="resume-icon icon" icon={faFileLines} onClick={() => window.open(`mailto:$ptrckchoi@gmail.com`, '_blank')} />
           </a>
           <h2>Download my Resume!</h2>
