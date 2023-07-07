@@ -5,7 +5,8 @@ import { faGithubAlt, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import {faFileLines} from '@fortawesome/free-regular-svg-icons'
 import Interests from "./Interests"
-
+// import patrick_resume_2023 from "../../assets/patrick_resume_2023.pdf"
+const resume = require("../../assets/patrick_resume_2023.pdf")
 const riley = require("../../assets/riley_baby.jpg")
 
 const AboutMe: React.FC = () => {
@@ -60,7 +61,7 @@ const AboutMe: React.FC = () => {
           </ul>
         </div>
         <div className="resume-big flex flex-col items-center justify-center">
-          <a href="../../assets/patrick_resume_2023.pdf" download>
+          <a href={resume} download>
             <FontAwesomeIcon className="resume-icon icon" icon={faFileLines} onClick={() => window.open(`mailto:$ptrckchoi@gmail.com`, '_blank')} />
           </a>
           <h2>Download my Resume!</h2>

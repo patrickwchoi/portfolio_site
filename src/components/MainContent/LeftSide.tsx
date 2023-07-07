@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubAlt, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, faDownload } from '@fortawesome/free-solid-svg-icons'
 
+const resume = require("../../assets/patrick_resume_2023.pdf")
 const stan_kyle = require('../../assets/stan_kyle.jpg');
 const me = require('../../assets/me.jpg');
 const LeftSide: React.FC = () => {
@@ -20,10 +21,10 @@ const LeftSide: React.FC = () => {
               <FontAwesomeIcon className="icon" icon={faGithubAlt} onClick={() => window.open('https://github.com/patrickwchoi')} />
               <FontAwesomeIcon className="icon" icon={faLinkedin} onClick={() => window.open('https://linkedin.com/in/patrickwchoi')}/>
               <FontAwesomeIcon className="icon" icon={faEnvelope} onClick={() => window.open(`mailto:$ptrckchoi@gmail.com`, '_blank')} />
-              <a href="../../patrick_resume_2023.pdf" download>
+              <a href={resume} download>
                 <h4 className="icon -translate-y-1">resume <FontAwesomeIcon icon={faDownload}/> </h4>
               </a>
-            </div>      
+            </div>
           </div>
         </div>
       </div>
