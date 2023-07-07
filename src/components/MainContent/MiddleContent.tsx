@@ -36,9 +36,9 @@ const MiddleContent: React.FC = () => {
   };
   
   return (
-    <div className="middleContent">
-    <img src={cats} alt="header" className="header_img" />
-      <div className="middle-content-text">
+    <div className="middleContent w-1/2 flex flex-col ">
+    <img src={cats} alt="header" className="header_img h-28 object-cover" />
+      <div className="middle-content-text border-2 border-t-0">
         <Box sx={{ width: '100%', typography: 'body1' }}>
         <TabContext value={value} >
           <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
