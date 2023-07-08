@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const umbreon = require("../../assets/umbreon.png");
 const eevee = require("../../assets/eevee.png");
