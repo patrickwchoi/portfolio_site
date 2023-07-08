@@ -5,24 +5,18 @@ import { faGithubAlt, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import {faFileLines} from '@fortawesome/free-regular-svg-icons'
 import Interests from "./Interests"
-
+// import patrick_resume_2023 from "../../assets/patrick_resume_2023.pdf"
+const resume = require("../../assets/patrick_resume_2023.pdf")
 const riley = require("../../assets/riley_baby.jpg")
 
 const AboutMe: React.FC = () => {
-  const openLink = (link: string) => {
-    window.open(link);
-  };
-
-  const openMail = (email: string) => {
-    window.open(`mailto:${email}`, '_blank');
-  };
 
   return (
     <div className="aboutme flex flex-col ">
       <div className="flex flex-row gap-x-2 justify-between">
-        <div className="aboutme-hello bg-secondaryBG border-2 max-w-xs px-2">
+        <div className="aboutme-hello bg-secondaryBG border-2 max-w-xs px-2 pb-1">
           <div className="flex flex-row justify-between pt-1.5 items-center">
-            <h2>Hello!</h2>
+            <h2 className='ml-1'>Hello!</h2>
             <div className="flex flex-row gap-2 ">
               <FontAwesomeIcon className="icon" icon={faGithubAlt} onClick={() => window.open('https://github.com/patrickwchoi')} />
               <FontAwesomeIcon className="icon" icon={faLinkedin} onClick={() => window.open('https://linkedin.com/in/patrickwchoi')}/>
@@ -60,8 +54,8 @@ const AboutMe: React.FC = () => {
           </ul>
         </div>
         <div className="resume-big flex flex-col items-center justify-center">
-          <a href="../../assets/patrick_resume_2023.pdf" download>
-            <FontAwesomeIcon className="resume-icon icon" icon={faFileLines} onClick={() => window.open(`mailto:$ptrckchoi@gmail.com`, '_blank')} />
+          <a href={resume} download>
+            <FontAwesomeIcon className="resume-icon icon" icon={faFileLines} />
           </a>
           <h2>Download my Resume!</h2>
         </div>
