@@ -6,22 +6,20 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'windows95': ['windows95', 'sans-serif'], // Add 'windows' as a new fontFamily option
+        windows95: ["windows95", "sans-serif"], // Add 'windows' as a new fontFamily option
       },
       colors: {
-        primaryBG: 'grey',
-        secondaryBG: 'rgb(185, 185, 185)',
-        secondaryBGHover: 'rgb(160, 160, 160)',
-        
+        primaryBG: "grey",
+        secondaryBG: "rgb(185, 185, 185)",
+        secondaryBGHover: "rgb(160, 160, 160)",
       },
       borderColor: {
-        DEFAULT: 'black', 
+        DEFAULT: "black",
       },
       borderWidth: {
-        DEFAULT: '2px',
+        DEFAULT: "2px",
       },
     },
   },
   plugins: [],
-}
-
+};

@@ -1,24 +1,23 @@
-
-h2{
+h2 {
   font-weight: bold;
   font-size: 1.5rem;
 }
 
-.css-13xfq8m-MuiTabPanel-root{ 
+.css-13xfq8m-MuiTabPanel-root {
   /* this is the default classname for my tab content */
-  padding:10px !important;
+  padding: 10px !important;
   /* padding-top: 0px !important; */
 }
 
-.MuiTabs-indicator{ 
+.MuiTabs-indicator {
   /* this gets rid of the default blue line under selected tab */
   background-color: transparent !important;
 }
-.resume-icon{
+.resume-icon {
   transition: 1.3s;
   height: 120px;
 }
-.resume-icon:hover{
+.resume-icon:hover {
   transform: translateY(-3px) rotateY(180deg);
   color: var(--secondaryBG);
 }

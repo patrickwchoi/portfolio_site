@@ -1,11 +1,10 @@
-import React from 'react';
+import React from "react";
 
 const Interests: React.FC = () => {
-
   return (
     <div className="flex flex-col bg-secondaryBG border w-fit p-3 pt-1">
       <h2>Interests</h2>
-      <p>I love talking about these things :{'}'}</p>
+      <p>I love talking about these things :{"}"}</p>
       <div className="flex flex-col">
         <div className="flex flex-row gap-1 items-center">
           <h4>Song:</h4>
@@ -51,10 +50,8 @@ const Interests: React.FC = () => {
           <h4>Who I'd Like to Meet:</h4>
           <p>Ice Spice</p>
         </div>
-
       </div>
     </div>
-  )
-
-}
-export default Interests
+  );
+};
+export default Interests;

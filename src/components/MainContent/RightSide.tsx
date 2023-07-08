@@ -6,7 +6,6 @@ const sylveon = require("../../assets/sylveon.png");
 const leafeon = require("../../assets/leafeon.png");
 
 const RightSide: React.FC = () => {
-
   const handleDarkTheme = () => {
     const root = document.documentElement;
     root.style.setProperty("--primaryBG", "var(--primaryBG-dark)");
@@ -28,6 +27,6 @@ const RightSide: React.FC = () => {
         <img src={umbreon} alt="" />
       </div>
     </div>
-  )
-}
+  );
+};
 export default RightSide;
