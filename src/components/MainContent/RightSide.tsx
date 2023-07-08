@@ -18,7 +18,7 @@ const RightSide: React.FC = () => {
     root.style.setProperty("--secondaryBG", "var(--secondaryBG-normal)");
   };
   return (
-    <div className="rightSide w-1/6 border rounded-sm flex flex-col gap-1 p-2">
+    <div className="rightSide border rounded-sm flex flex-row gap-1 p-2 mb-2 sm:flex-col sm:w-1/6 sm:mb-0">
       <div className="rightside-btn">
         <button onClick={handleNormalTheme}>normal theme</button>
         <img src={eevee} alt="" />

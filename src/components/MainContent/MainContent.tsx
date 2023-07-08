@@ -7,7 +7,7 @@ import './MainContent.css'
 const MainContent: React.FC = () => {
 
   return (
-    <div className='mainContent flex flex-row pt-3 px-2 gap-5'>
+    <div className='mainContent flex flex-col items-center sm:flex-row sm:items-start pt-3 px-2 gap-5'>
       <LeftSide />
       <MiddleContent />
       <RightSide />

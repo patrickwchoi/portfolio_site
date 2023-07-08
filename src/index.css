@@ -21,14 +21,14 @@
     flex-direction: column !important; */
   }
   .leftSide{
-    display: none !important;
+    /* display: none !important; */
   }
   /* .rightSide{
     display: none !important;
   } */
   .middleContent{
-    margin-left: 40px;
-    width: 100% !important;
+    /* margin-left: 40px;
+    width: 100% !important; */
   }
 }
 
