@@ -14,21 +14,3 @@
   font-weight: normal;
   src: url("/src/fonts/W95FA.otf");
 }
-
-@media (max-width: 767px) {
-  .mainContent{
-    /* display:flex;
-    flex-direction: column !important; */
-  }
-  .leftSide{
-    /* display: none !important; */
-  }
-  /* .rightSide{
-    display: none !important;
-  } */
-  .middleContent{
-    /* margin-left: 40px;
-    width: 100% !important; */
-  }
-}
-
