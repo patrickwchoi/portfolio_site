@@ -34,7 +34,7 @@ const MiddleContent: React.FC = () => {
   };
 
   return (
-    <div className="middleContent md:w-1/2 flex flex-col ">
+    <div className="middleContent md:w-3/5 flex flex-col ">
       <img
         src={cats}
         alt="header"
