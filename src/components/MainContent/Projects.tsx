@@ -1,6 +1,8 @@
 import bagon from "../../assets/bagon.jpg";
 import tumble_ss from "../../assets/tumble_screenshot.png";
 import singed_ss from "../../assets/mern.jpg";
+import congresswatcher_ss from "../../assets/congresswatcher_thin.png";
+import { faGithubAlt } from "@fortawesome/free-brands-svg-icons";
 
 export default function Projects() {
   function redirectToBagon() {
@@ -15,8 +17,29 @@ export default function Projects() {
   function redirectToSinged() {
     window.open("https://singed.onrender.com/", "_blank");
   }
+  function redirectToCongressWatcher() {
+    window.open("https://congress-watcher.vercel.app/", "_blank");
+  }
   return (
     <div className="projects flex flex-col gap-y-5">
+      <div className="projects-item flex flex-row justify-between gap-3 items-center">
+        <img
+          src={congresswatcher_ss}
+          alt="penguin"
+          className="w-48 hover:-translate-y-1.5 duration-500 pointer"
+          onClick={redirectToCongressWatcher}
+        />
+        <div className="project-text border bg-secondaryBG px-2 py-1">
+          <h2 className="pointer title_link" onClick={redirectToCongressWatcher}>
+            Congress Watcher
+          </h2>
+          <p>
+            A web application designed to simplify access to US Congress news. 
+            Built using Next.js with server-side rendering, it integrates with ProPublica and Wikipedia APIs, 
+            and is styled elegantly using TailwindCSS
+          </p>
+        </div>
+      </div>
       <div className="projects-item flex flex-row justify-between gap-3 items-center">
         <div className="project-text border bg-secondaryBG px-2 py-1">
           <h2 className="pointer title_link" onClick={redirectToBagon}>
