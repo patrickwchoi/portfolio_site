@@ -34,9 +34,10 @@ export default function Projects() {
             Congress Watcher
           </h2>
           <p>
-            A web application designed to simplify access to US Congress news. 
-            Built using Next.js with server-side rendering, it integrates with ProPublica and Wikipedia APIs, 
-            and is styled elegantly using TailwindCSS
+            Congress Watcher is a web application designed to simplify access to US Congress news. 
+            Built with the server-side rendering capabilities of Next.js to efficiently fetch and present real-time data.
+            Also integrates REST-ful 3rd party APIs like ProPublica and Wikipedia using Next.js’s built-in API utilities, 
+            and is styled with TailwindCSS.
           </p>
         </div>
       </div>
