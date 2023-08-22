@@ -29,7 +29,7 @@ export default function Projects() {
         <img
           src={congresswatcher_ss}
           alt="penguin"
-          className="w-48 hover:-translate-y-1.5 duration-500 pointer"
+          className="w-4/6 md:w-48 hover:-translate-y-1.5 duration-500 pointer"
           onClick={redirectToCongressWatcher}
         />
         <div className="project-text border bg-secondaryBG px-2 py-1">
@@ -59,7 +59,7 @@ export default function Projects() {
         <img
           src={bagon}
           alt="penguin"
-          className="w-48 hover:-translate-y-1.5 duration-500 pointer"
+          className="w-4/6 md:w-48 hover:-translate-y-1.5 duration-500 pointer"
           onClick={redirectToBagon}
         />
         <div className="project-text border bg-secondaryBG px-2 py-1">
@@ -73,7 +73,7 @@ export default function Projects() {
                 onClick={() => window.open("https://github.com/patrickwchoi/javascript_project_AA")} // Replace with the correct GitHub link
               />
           </div>
-          Bagon Adventures is a browser-based game made with vanilla
+            Bagon Adventures is a browser-based game made with vanilla
             Javascript and HTML Canvas. You play as a member of Team Rocket
             trying to evolve your Bagon by interacting with wild pokemon.
             Features include WASD movement, collision detection, sprite
@@ -87,7 +87,7 @@ export default function Projects() {
         <img
           src={tumble_ss}
           alt="penguin"
-          className="w-48 hover:-translate-y-1.5 duration-500 pointer"
+          className="w-4/6 md:w-48 hover:-translate-y-1.5 duration-500 pointer"
           onClick={redirectToTumble}
         />
         <div className="project-text border bg-secondaryBG px-2 py-1">
@@ -101,7 +101,7 @@ export default function Projects() {
                 onClick={() => window.open("https://github.com/patrickwchoi/fullstack_project")} // Replace with the correct GitHub link
               />
           </div>
-          Tumble is a fullstack Tumblr clone built with a React/Redux frontend
+            Tumble is a fullstack Tumblr clone built with a React/Redux frontend
             and Ruby on Rails backend. Features full CRUD functionality on posts
             and comments as well as partial CRUD for likes and user profiles.
             Utilized AWS S3 for the purpose of image storage, scalability and
@@ -114,7 +114,7 @@ export default function Projects() {
         <img
           src={singed_ss}
           alt="penguin"
-          className="w-48 hover:-translate-y-1.5 duration-500 pointer"
+          className="w-4/6 md:w-48 hover:-translate-y-1.5 duration-500 pointer"
           onClick={redirectToSinged}
         />
         <div className="project-text border bg-secondaryBG px-2 py-1">
@@ -128,7 +128,7 @@ export default function Projects() {
                 onClick={() => window.open("https://github.com/mfong4151/Singed")} // Replace with the correct GitHub link
               />
           </div>
-          Singed is a group project with 3 other contributors for a web
+            Singed is a group project with 3 other contributors for a web
             application that recommends users dishes and restaurants. Built
             using the MERN (MongoDB, Express, React, Node) stack. Focused mainly
             on artistic design and CSS styling.
