@@ -9,7 +9,7 @@ const MainContent: React.FC = () => {
     <div className="mainContent flex flex-col items-center md:flex-row md:items-start pt-3 px-2 gap-5">
       <LeftSide />
       <MiddleContent />
-      <RightSide />
+      {/* <RightSide /> */}
     </div>
   );
 };

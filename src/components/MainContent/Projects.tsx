@@ -25,7 +25,7 @@ export default function Projects() {
 
   return (
     <div className="projects flex flex-col gap-y-5">
-      <div className="projects-item flex flex-row justify-between gap-3 items-center">
+      <div className="projects-item flex flex-col md:flex-row justify-between gap-3 items-center">
         <img
           src={congresswatcher_ss}
           alt="penguin"
@@ -34,16 +34,19 @@ export default function Projects() {
         />
         <div className="project-text border bg-secondaryBG px-2 py-1">
           <div className="project-title flex flex-row items-center justify-between">
-            <h2 className="pointer title_link" onClick={redirectToCongressWatcher}>
-              Congress Watcher
-            </h2>
+            <div className="project-title flex md:flex-row items-center gap-2">
+              <h2 className="pointer title_link" onClick={redirectToCongressWatcher}>
+                Congress Watcher
+              </h2>
+              <p className="">Next.js, Typescript, Tailwind</p>
+            </div>
             <FontAwesomeIcon
                 className="icon"
                 icon={faGithubAlt}
                 onClick={() => window.open("https://github.com/patrickwchoi/congress-watcher")}
               />
           </div>
-          Congress Watcher is a web application designed to simplify access to US Congress news.
+            Congress Watcher is a web application designed to simplify access to US Congress news.
             Built with the server-side rendering capabilities of Next.js to efficiently fetch and present real-time data.
             Also integrates REST-ful 3rd party APIs like ProPublica and Wikipedia using Next.js’s built-in API utilities,
             and is styled with TailwindCSS.
@@ -52,7 +55,13 @@ export default function Projects() {
       
       {/* Following the same pattern for other projects */}
       {/* Bagon Adventures */}
-      <div className="projects-item flex flex-row justify-between gap-3 items-center">
+      <div className="projects-item flex flex-col md:flex-row-reverse justify-between gap-3 items-center">
+        <img
+          src={bagon}
+          alt="penguin"
+          className="w-48 hover:-translate-y-1.5 duration-500 pointer"
+          onClick={redirectToBagon}
+        />
         <div className="project-text border bg-secondaryBG px-2 py-1">
           <div className="project-title flex flex-row items-center justify-between">
             <h2 className="pointer title_link" onClick={redirectToBagon}>
@@ -71,16 +80,10 @@ export default function Projects() {
             animations, and gameplay progression. Inspired by Pokemon Mystery
             Dungeon.
         </div>
-        <img
-          src={bagon}
-          alt="penguin"
-          className="w-48 hover:-translate-y-1.5 duration-500 pointer"
-          onClick={redirectToBagon}
-        />
       </div>
 
       {/* Tumble */}
-      <div className="projects-item flex flex-row justify-between gap-3 items-center project-item-alternate">
+      <div className="projects-item flex flex-col md:flex-row justify-between gap-3 items-center project-item-alternate">
         <img
           src={tumble_ss}
           alt="penguin"
@@ -107,7 +110,13 @@ export default function Projects() {
       </div>
 
       {/* Singed */}
-      <div className="projects-item flex flex-row justify-between gap-3 items-center">
+      <div className="projects-item flex flex-col md:flex-row-reverse justify-between gap-3 items-center">
+        <img
+          src={singed_ss}
+          alt="penguin"
+          className="w-48 hover:-translate-y-1.5 duration-500 pointer"
+          onClick={redirectToSinged}
+        />
         <div className="project-text border bg-secondaryBG px-2 py-1">
           <div className="project-title flex flex-row items-center justify-between">
             <h2 className="pointer title_link" onClick={redirectToSinged}>
@@ -124,12 +133,6 @@ export default function Projects() {
             using the MERN (MongoDB, Express, React, Node) stack. Focused mainly
             on artistic design and CSS styling.
         </div>
-        <img
-          src={singed_ss}
-          alt="penguin"
-          className="w-48 hover:-translate-y-1.5 duration-500 pointer"
-          onClick={redirectToSinged}
-        />
       </div>
     </div>
   );
