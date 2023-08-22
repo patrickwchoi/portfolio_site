@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/portfolio_site/static/css/main.bcb9ff49.css",
-    "main.js": "/portfolio_site/static/js/main.2c62af17.js",
+    "main.css": "/portfolio_site/static/css/main.9bbf83c8.css",
+    "main.js": "/portfolio_site/static/js/main.252de942.js",
     "static/media/tumble_screenshot.png": "/portfolio_site/static/media/tumble_screenshot.0c16fb725ec2ed664cf7.png",
     "static/media/me.jpg": "/portfolio_site/static/media/me.09e8e82dae0b813e7948.jpg",
     "static/media/riley_baby.jpg": "/portfolio_site/static/media/riley_baby.fd9d7b03bb7b1a324f65.jpg",
+    "static/media/congresswatcher_thin.png": "/portfolio_site/static/media/congresswatcher_thin.7ef1072710acde49a312.png",
     "static/media/stan_kyle.jpg": "/portfolio_site/static/media/stan_kyle.26d19f01b46cc5b3c6ce.jpg",
     "static/media/patrick_resume_2023.pdf": "/portfolio_site/static/media/patrick_resume_2023.17ed99064ef4dfeeb600.pdf",
     "static/media/mern.jpg": "/portfolio_site/static/media/mern.812b84a7c8d1447c5ce2.jpg",
@@ -12,11 +13,11 @@
     "static/media/cats_header.jpg": "/portfolio_site/static/media/cats_header.10e00ab7f7b3d5525e37.jpg",
     "static/media/bagon.jpg": "/portfolio_site/static/media/bagon.690f0cd318bca529ceb1.jpg",
     "index.html": "/portfolio_site/index.html",
-    "main.bcb9ff49.css.map": "/portfolio_site/static/css/main.bcb9ff49.css.map",
-    "main.2c62af17.js.map": "/portfolio_site/static/js/main.2c62af17.js.map"
+    "main.9bbf83c8.css.map": "/portfolio_site/static/css/main.9bbf83c8.css.map",
+    "main.252de942.js.map": "/portfolio_site/static/js/main.252de942.js.map"
   },
   "entrypoints": [
-    "static/css/main.bcb9ff49.css",
-    "static/js/main.2c62af17.js"
+    "static/css/main.9bbf83c8.css",
+    "static/js/main.252de942.js"
   ]
 }
