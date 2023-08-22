@@ -64,9 +64,12 @@ export default function Projects() {
         />
         <div className="project-text border bg-secondaryBG px-2 py-1">
           <div className="project-title flex flex-row items-center justify-between">
-            <h2 className="pointer title_link" onClick={redirectToBagon}>
-              Bagon Adventures
-            </h2>
+            <div className="project-title flex md:flex-row items-center gap-2">
+              <h2 className="pointer title_link" onClick={redirectToBagon}>
+                Bagon Adventures
+              </h2>
+              <p className="">Javascript, HTML Canvas</p>
+            </div>
             <FontAwesomeIcon
                 className="icon"
                 icon={faGithubAlt}
@@ -92,9 +95,12 @@ export default function Projects() {
         />
         <div className="project-text border bg-secondaryBG px-2 py-1">
           <div className="project-title flex flex-row items-center justify-between">
-            <h2 className="pointer title_link" onClick={redirectToTumble}>
-              Tumble
-            </h2>
+          <div className="project-title flex md:flex-row items-center gap-2">
+              <h2 className="pointer title_link" onClick={redirectToTumble}>
+                Tumble
+              </h2>
+              <p className="">React/Redux, Ruby on Rails, Javascript, PostgresQL</p>
+            </div>
             <FontAwesomeIcon
                 className="icon"
                 icon={faGithubAlt}
@@ -119,9 +125,12 @@ export default function Projects() {
         />
         <div className="project-text border bg-secondaryBG px-2 py-1">
           <div className="project-title flex flex-row items-center justify-between">
-            <h2 className="pointer title_link" onClick={redirectToSinged}>
-              Singed
-            </h2>
+            <div className="project-title flex md:flex-row items-center gap-2">
+              <h2 className="pointer title_link" onClick={redirectToCongressWatcher}>
+                Congress Watcher
+              </h2>
+              <p className="">MERN, Javascript</p>
+            </div>
             <FontAwesomeIcon
                 className="icon"
                 icon={faGithubAlt}
