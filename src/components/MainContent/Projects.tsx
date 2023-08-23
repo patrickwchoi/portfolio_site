@@ -127,7 +127,7 @@ export default function Projects() {
           <div className="project-title flex flex-row items-center justify-between">
             <div className="project-title flex md:flex-row items-center gap-2">
               <h2 className="pointer title_link" onClick={redirectToCongressWatcher}>
-                Congress Watcher
+                Singed
               </h2>
               <p className="">MERN, Javascript</p>
             </div>
